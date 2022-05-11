@@ -1,0 +1,32 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+a,a:link,a:visited,a:active{
+    text-decoration: none;
+    color: white;
+}
+.row1{
+    border-bottom: 1px solid rgb(0, 110, 255);
+    font-size: 30px;
+    padding: 20px;
+}
+.btn-primary{
+    color: white;
+    background-color: rgb(0, 110, 255);
+}
+.row2{
+    font-size: 25px;
+    padding: 20px;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    text-align: center;
+}
+.row3{
+    background-color: rgb(180, 243, 183);
+    font-size: 18px;
+}
+.row4{
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
