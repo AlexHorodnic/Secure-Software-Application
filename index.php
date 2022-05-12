@@ -59,50 +59,50 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 </div>
           </div>
           <div class="row row4 justify-content-center">LIST OF REGISTERED USERS</div>
-          <div class="row rowtitle justify-content-center">
-              <div class="col-4">
-              <div style="padding-right: 51px;">ID</div>
+          <div class="row rowtitle">
+              <div class="col-4"style="text-align: center;">
+              <div>ID</div>
               </div>
-              <div class="col-4">
-              <div style="padding-right: 51px;">USERNAME</div>
+              <div class="col-4"style="text-align: center;">
+              <div>USERNAME</div>
               </div>
-              <div class="col-4">
-              <div style="padding-right: 51px;">LATEST LOGIN DATE</div>
+              <div class="col-4"style="text-align: center;">
+              <div>LATEST LOGIN DATE</div>
               </div>
           </div>
           <div class="row row3 ">
-          <div class="col-4">
+          <div class="col-4" style="text-align: center;">
           <div>
                         <?php
                             $result = mysqli_query($link,"SELECT id FROM users");
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo  $row['id'] ;
+                            echo  $row['id']. "<br>" ;
                             }
                         ?>
                 </div>
           </div>
-          <div class="col-4">
+          <div class="col-4" style="text-align: center;">
                   <div>
                         <?php
                             $result = mysqli_query($link,"SELECT username FROM users");
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo $row['username'];
+                            echo $row['username']. "<br>" ;
                             }
                         ?>
                 </div>
           </div>
-          <div class="col-4">
+          <div class="col-4" style="text-align: center;">
           <div >
                         <?php
                             $result = mysqli_query($link,"SELECT last_login FROM users");
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo $row['last_login'];
+                            echo $row['last_login']. "<br>" ;
                             }
                         ?>
                 </div>

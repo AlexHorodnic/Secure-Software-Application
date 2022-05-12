@@ -29,11 +29,16 @@ a,a:link,a:visited,a:active{
     text-align: center;
 }
 .row3{
-    background-color: rgb(180, 243, 183);
+    background-color: rgb(175, 255, 179);
     font-size: 18px;
 }
 .row4{
     font-size: 25px;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.rowtitle{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(109, 255, 116);
 }
