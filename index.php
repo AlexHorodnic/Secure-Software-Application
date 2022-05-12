@@ -58,38 +58,56 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                     ?>
                 </div>
           </div>
-          <div class="row row4 justify-content-center">REGISTERED USERS</div>
-          <div class="row row3 justify-content-center">
-          <div style="padding-right: 51px;">
+          <div class="row row4 justify-content-center">LIST OF REGISTERED USERS</div>
+          <div class="row rowtitle justify-content-center">
+              <div class="col-4">
+              <div style="padding-right: 51px;">ID</div>
+              </div>
+              <div class="col-4">
+              <div style="padding-right: 51px;">USERNAME</div>
+              </div>
+              <div class="col-4">
+              <div style="padding-right: 51px;">LATEST LOGIN DATE</div>
+              </div>
+          </div>
+          <div class="row row3 ">
+          <div class="col-4">
+          <div>
                         <?php
                             $result = mysqli_query($link,"SELECT id FROM users");
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo "<div>ID | " . $row['id'] . " </div>";
+                            echo  $row['id'] ;
                             }
                         ?>
                 </div>
-                <div style="padding-right: 51px;">
+          </div>
+          <div class="col-4">
+                  <div>
                         <?php
                             $result = mysqli_query($link,"SELECT username FROM users");
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo "<div> Username | " . $row['username'] . "</div>";
+                            echo $row['username'];
                             }
                         ?>
                 </div>
-                <div >
+          </div>
+          <div class="col-4">
+          <div >
                         <?php
                             $result = mysqli_query($link,"SELECT last_login FROM users");
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo "<div>Last Login | " . $row['last_login'] . "</div>";
+                            echo $row['last_login'];
                             }
                         ?>
                 </div>
+              </div>     
+                
           </div>
       </div>
 

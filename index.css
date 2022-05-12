@@ -1,6 +1,13 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+body{
+    background-image: linear-gradient( rgb(160, 201, 255), white);
+}
+.container{
+    background-color: white;
+    height: 100vh;
+}
 a,a:link,a:visited,a:active{
     text-decoration: none;
     color: white;
@@ -28,5 +35,5 @@ a,a:link,a:visited,a:active{
 .row4{
     font-size: 25px;
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 }
