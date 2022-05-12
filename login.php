@@ -65,7 +65,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             
                             $result = mysqli_query($link,"UPDATE `users` SET last_login = current_timestamp WHERE username = '$username'");
                             
-
                             // Redirect user to welcome page
                             header("location: index.php");
                         } else{

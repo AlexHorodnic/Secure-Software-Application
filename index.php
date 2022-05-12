@@ -54,6 +54,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                           if(isset($_SESSION['username'])){
                             echo "Welcome {$_SESSION['username']}!";
                           }
+                          //$sql = "UPDATE users SET role_access='idk'";
                     ?>
                 </div>
           </div>
@@ -65,7 +66,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo "<div>ID | " . $row['id'] . "</div>";
+                            echo "<div>ID | " . $row['id'] . " </div>";
                             }
                         ?>
                 </div>
@@ -75,7 +76,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
                             while($row = mysqli_fetch_array($result)) 
                             {
-                            echo "<div>Username | " . $row['username'] . "</div>";
+                            echo "<div> Username | " . $row['username'] . "</div>";
                             }
                         ?>
                 </div>
