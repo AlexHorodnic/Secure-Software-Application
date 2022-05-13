@@ -7,7 +7,7 @@ along with Mysql for the database required.
 It includes the following features:
 
 Register and Login functionalities using input validation elements.
-Automatically updated dates based on the las time users logged in.
+Automatically updated dates based on the last time users logged in.
 
 # Installation Steps
 
