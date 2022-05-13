@@ -52,7 +52,7 @@ CREATE TABLE `users` (
 Now we have our table ready to accommodate users.
 
 
-#Starting the Application
+# Starting the Application
 
 To start our application we can do the following:
 
