@@ -4,6 +4,12 @@
 This application has been developed using the coding languages HTML, CSS, PHP, 
 along with Mysql for the database required.
 
+It includes the following features:
+
+Register and Login functionalities using input validation elements.
+Access control over the users already registered on that web-application.
+Automatically updated dates based on the las time users logged in.
+
 # Installation Steps
 
 Download and Install the Wamp Server Latest version (default settings) from the link below:
